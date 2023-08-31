@@ -1,1 +1,10 @@
-<sqs-image-submitting-nx-welcome></sqs-image-submitting-nx-welcome>
+<!--
+  generate css styles for the code below -->
+
+<h1>Gerador de imagens</h1>
+<div>
+  <label for="images-quantity">Quantidade de imagens</label>
+  <input type="number" id="images-quantity" [formControl]="imageQuantity" />
+  <button (click)="solicitar()">Solicitar imagens</button>
+</div>
+

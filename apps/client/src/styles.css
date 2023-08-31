@@ -1,1 +1,81 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Style for the <h1> element */
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style for the <div> container */
+div {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.9),
+    10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the <label> element */
+label {
+  font-size: 16px;
+  color: #555;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Style for the <input> element */
+input[type='number'] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+  box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.9),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the <button> element */
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.9),
+    5px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Style for the <button> element on hover */
+button:hover {
+  background-color: #ddd; /* Lighten the background color on hover */
+}
+
+/* Style for button in a pressed state */
+button:active {
+  box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.9),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for button on macOS */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
