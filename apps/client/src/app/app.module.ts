@@ -5,6 +5,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SocketIoModule } from 'ngx-socket-io';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -17,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       positionClass: 'toast-top-right',
       preventDuplicates: true,
     }),
+    SocketIoModule.forRoot({ url: 'http://localhost:3001', options: {} }),
   ],
   providers: [],
   bootstrap: [AppComponent],
